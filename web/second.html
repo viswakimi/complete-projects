@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- for css -->
+ <html>
+    <head>
+        <title>css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #45a049;
+        }
+        div{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        div.gallery{
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+        div.gallery.hover{
+            border: 1px solid #777;
+        }
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+        div{
+            /* height: 200px;   */
+            /* width: 400px; */
+            background-color: lightblue;
+            margin: 0px;
+            /* overflow: scroll; */
+            /* to see the overflow datacx */
+        }
+        img{
+            /* to shift the position */
+            float: right;
+            margin-left: auto;
+            margin-right: auto;
+            /* to set in center */
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        body{
+            /* background-color: lightgrey; */
+            /* background-image: url('1.jpg'); */
+            background-size: cover;
+            opacity: 0.8;
+            /* background-image: url(""); */
+            /* max-width: 100%; */
+            margin: 0px;    
+        } 
+        h1{
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+            outline: 2px solid green;
+            text-decoration: dotted black underline;
+            font-size: 16px;
+            font-weight:bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            color: blue;
+            background-color: yellow;
+            text-align: center;
+        }
+        h1{
+            display: inline-block;
+            z-index: 1;
+        }
+        /* h1{
+            position: static;
+        }
+        h2{
+            position: relative;
+            top:10 px;
+            left: 10 px;
+        }
+        h3{
+            position: absolute;
+            top:60 px;
+            right:0 px;
+        }
+        h4{
+            position: fixed;
+            bottom: 0 px;
+            right: 0 px;
+        }
+        /* a:hover{
+            color: red;
+        } */
+        a:visited{
+            color: green;
+        }
+        a:active{
+            color: yellow;
+        } */
+        ul{
+            
+            list-style-type: square;
+            list-style-position: inside;
+            letter-spacing: normal;
+            
+        }
+        /* ol{
+            list-style-type: upper-roman;
+            list-style-position: outside;
+            letter-spacing: 2px;
+        } */
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 10px;
+        }
+        th,td{
+            background-color: bisque;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: inline-block;
+            background-color: #333;
+
+        }
+        div{
+            height: 200px;  
+            width: 400px;
+            background-color: lightblue;
+            margin: 0px;
+        }
+
+    </style>
+    <body>
+        <div class=""gallery">
+            <a target="_blank" href="1.jpg"></a>
+                <img src="1.jpg" alt="1.jpg" width="300" height="200">
+            <img src="1.jpg" alt="1.jpg" width="300" height="200">
+            <img src="2.jpg" alt="2.jpg" width="300" height="200">
+            <img src="3.jpg" alt="3.jpg" width="300" height="200">
+            <img src="4.jpg" alt="4.jpg" width="300" height="200">
+        <div class="desc">images</div>
+        </div>
+
+
+        <i class="fa fa-home"></i><br>
+        <i class="material icons">home</i><br>
+        <i class="glyphicon glyphicon-home"></i><br>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+
+        <h1>Notes</h1>
+        <p style="color:red;">Here are some notes</p>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p> we can color by rgb(255,0,0) for red by providing value we can change</p>
+        <p> we can color by hex code #ff0000 for red,#00ff00 for green by providing value we can change</p>
+        <p> we can color by color name red for red by providing value we can change</p>
+        <p> we can color by hsl(0,100%,50%) for red by providing value we can change</p>
+        <p> for saturation colour--> we can color by hsla(0,100%,50%,0.3) for red by providing value we can change</p>
+        <hr>
+        <h1>background colour</h1>
+        <p>background color by rgb(255,0,0) for red by providing value we can change</p>
+        <p>background image by url() then set size</p>
+        <p> boxing,border,margin,padding--margin was outside padding was inside</p>
+        <p>outline,text,font</p>
+        <hr>
+        <a href = "https://www.w3schools.com/css/css_selectors.asp">w3 schools-click here for more info</a>
+        <hr>
+        <u1>
+            <li>css selector</li>
+            <li>css properties</li>
+            <li>css values</li>
+            <li>css syntax</li>
+            <li>css comments</li>
+        </u1>
+        <hr>
+        <table>
+            <caption>table</caption>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>lili</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>jam</td>
+                <td>30</td>
+            </tr>
+        </table>
+        <hr>
+        <h1>table</h1>
+        <p>for table ..has to sytle for outer then for table head and then for table data</p>
+        <h2>this demo</h2>
+        <p>z-index is the CSS property that controls the stacking order of overlapping elements on a page.</p>
+        <h3>this demo</h3>
+        <u1>
+            <li><a href="">home</a></li>
+            <li><a href="">aboout us</a></li>
+            <li><a href="">contact us</a></li>
+        </u1>
+        <hr>
+        <h4>this demo</h4>
+        <!-- for getting input and submit -->
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name..">
+            <input type="submit" value="Submit">
+        <h5>this demo</h5>
+    </body>
+ </html>
